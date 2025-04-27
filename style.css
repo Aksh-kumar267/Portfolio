@@ -1,0 +1,162 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: 'Arial', sans-serif;
+    line-height: 1.6;
+  }
+  
+  .navbar {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+    background: white;
+  }
+  
+  .nav-links a {
+    margin: 0 10px;
+    text-decoration: none;
+    color: black;
+  }
+  
+  .hero {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    padding: 50px 20px;
+    background: #f9f9f9;
+  }
+  
+  .hero-text {
+    flex: 1;
+    min-width: 300px;
+  }
+  
+  .hero-text h1 {
+    font-size: 2.5em;
+  }
+  
+  .hero-text p {
+    margin: 20px 0;
+  }
+  
+  .hero-text button {
+    background: #1E63F5;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+  }
+  
+  .hero-image {
+    flex: 1;
+    text-align: center;
+  }
+  
+  .hero-image img {
+    width: 80%;
+    max-width: 300px;
+    border-radius: 10px;
+  }
+  
+  .about {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 50px 20px;
+  }
+  
+  .about-me, .skills {
+    flex: 1;
+    min-width: 300px;
+    margin: 10px;
+  }
+  
+  .skill-bar {
+    margin-bottom: 20px;
+  }
+  
+  .skill-bar span {
+    display: block;
+    margin-bottom: 5px;
+  }
+  
+  .bar {
+    background: #ddd;
+    border-radius: 5px;
+    overflow: hidden;
+  }
+  
+  .progress {
+    height: 10px;
+    background: #1E63F5;
+  }
+  
+  .projects {
+    padding: 50px 20px;
+  }
+  
+  .project-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+  }
+  
+  .project-card {
+    flex: 1;
+    min-width: 250px;
+    background: #f9f9f9;
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
+  }
+  
+  .project-card img {
+    width: 100%;
+    height: auto;
+    margin-bottom: 10px;
+  }
+  
+  .project-card button {
+    margin-top: 10px;
+    background: #1E63F5;
+    color: white;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+  }
+  
+  .contact {
+    padding: 50px 20px;
+  }
+  
+  .contact-form {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+  }
+  
+  .contact-form input, .contact-form button {
+    flex: 1;
+    min-width: 250px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+  }
+  
+  .contact-form button {
+    background: #1E63F5;
+    color: white;
+    border: none;
+  }
+  
+  /* Responsive */
+  @media (max-width: 768px) {
+    .hero, .about, .projects {
+      flex-direction: column;
+      text-align: center;
+    }
+  }
+  
